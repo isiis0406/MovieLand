@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+{% block title %}MovieLand{% endblock %}
+{% block body %}
+    {% for movie in movies %}
+    <h1>
+        titre: {{ movie.title }} 
+    </h1>
+    <p> 
+        description: {{movie.description}}
+    </p>
+
+    {% endfor %}
+{% endblock %}
